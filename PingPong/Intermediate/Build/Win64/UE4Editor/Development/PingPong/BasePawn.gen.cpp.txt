@@ -1,0 +1,5 @@
+C:\Unreal\Multiplayer_PingPong_Unreal\PingPong\Intermediate\Build\Win64\UE4Editor\Development\PingPong\Definitions.PingPong.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+C:\Unreal\Multiplayer_PingPong_Unreal\PingPong\Source\PingPong/BasePawn.h
+C:\Unreal\Multiplayer_PingPong_Unreal\PingPong\Intermediate\Build\Win64\UE4Editor\Inc\PingPong\BasePawn.generated.h

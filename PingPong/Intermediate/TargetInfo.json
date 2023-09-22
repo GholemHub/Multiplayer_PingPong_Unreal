@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "PingPong",
+			"Path": "C:\\Unreal\\Multiplayer_PingPong_Unreal\\PingPong\\Source\\PingPong.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "PingPongEditor",
+			"Path": "C:\\Unreal\\Multiplayer_PingPong_Unreal\\PingPong\\Source\\PingPongEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
