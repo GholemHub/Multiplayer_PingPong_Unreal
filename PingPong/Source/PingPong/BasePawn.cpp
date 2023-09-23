@@ -8,6 +8,7 @@ ABasePawn::ABasePawn()
  	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 	SceneComponent = CreateDefaultSubobject<USceneComponent>("SceneComponent");
+
 	SetRootComponent(SceneComponent);
 }
 
@@ -35,6 +36,7 @@ void ABasePawn::Tick(float DeltaTime)
 void ABasePawn::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
+
 	UE_LOG(LogTemp, Warning, TEXT("Begin"));
 	PlayerInputComponent->BindAxis("MoveYaw", this, &ABasePawn::MoveYaw);
 	

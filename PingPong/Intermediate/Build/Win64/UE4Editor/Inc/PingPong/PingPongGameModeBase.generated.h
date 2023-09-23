@@ -13,10 +13,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define PINGPONG_PingPongGameModeBase_generated_h
 
-#define PingPong_Source_PingPong_PingPongGameModeBase_h_16_SPARSE_DATA
-#define PingPong_Source_PingPong_PingPongGameModeBase_h_16_RPC_WRAPPERS
-#define PingPong_Source_PingPong_PingPongGameModeBase_h_16_RPC_WRAPPERS_NO_PURE_DECLS
-#define PingPong_Source_PingPong_PingPongGameModeBase_h_16_INCLASS_NO_PURE_DECLS \
+#define PingPong_Source_PingPong_PingPongGameModeBase_h_17_SPARSE_DATA
+#define PingPong_Source_PingPong_PingPongGameModeBase_h_17_RPC_WRAPPERS
+#define PingPong_Source_PingPong_PingPongGameModeBase_h_17_RPC_WRAPPERS_NO_PURE_DECLS
+#define PingPong_Source_PingPong_PingPongGameModeBase_h_17_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAPingPongGameModeBase(); \
 	friend struct Z_Construct_UClass_APingPongGameModeBase_Statics; \
@@ -25,7 +25,7 @@ public: \
 	DECLARE_SERIALIZER(APingPongGameModeBase)
 
 
-#define PingPong_Source_PingPong_PingPongGameModeBase_h_16_INCLASS \
+#define PingPong_Source_PingPong_PingPongGameModeBase_h_17_INCLASS \
 private: \
 	static void StaticRegisterNativesAPingPongGameModeBase(); \
 	friend struct Z_Construct_UClass_APingPongGameModeBase_Statics; \
@@ -34,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(APingPongGameModeBase)
 
 
-#define PingPong_Source_PingPong_PingPongGameModeBase_h_16_STANDARD_CONSTRUCTORS \
+#define PingPong_Source_PingPong_PingPongGameModeBase_h_17_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API APingPongGameModeBase(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(APingPongGameModeBase) \
@@ -47,7 +47,7 @@ private: \
 public:
 
 
-#define PingPong_Source_PingPong_PingPongGameModeBase_h_16_ENHANCED_CONSTRUCTORS \
+#define PingPong_Source_PingPong_PingPongGameModeBase_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API APingPongGameModeBase(APingPongGameModeBase&&); \
@@ -58,28 +58,32 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(APingPongGameModeBase)
 
 
-#define PingPong_Source_PingPong_PingPongGameModeBase_h_16_PRIVATE_PROPERTY_OFFSET
-#define PingPong_Source_PingPong_PingPongGameModeBase_h_13_PROLOG
-#define PingPong_Source_PingPong_PingPongGameModeBase_h_16_GENERATED_BODY_LEGACY \
+#define PingPong_Source_PingPong_PingPongGameModeBase_h_17_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__SecondPlayerCharacterClass() { return STRUCT_OFFSET(APingPongGameModeBase, SecondPlayerCharacterClass); } \
+	FORCEINLINE static uint32 __PPO__SecondPlayerControllerClass() { return STRUCT_OFFSET(APingPongGameModeBase, SecondPlayerControllerClass); }
+
+
+#define PingPong_Source_PingPong_PingPongGameModeBase_h_14_PROLOG
+#define PingPong_Source_PingPong_PingPongGameModeBase_h_17_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	PingPong_Source_PingPong_PingPongGameModeBase_h_16_PRIVATE_PROPERTY_OFFSET \
-	PingPong_Source_PingPong_PingPongGameModeBase_h_16_SPARSE_DATA \
-	PingPong_Source_PingPong_PingPongGameModeBase_h_16_RPC_WRAPPERS \
-	PingPong_Source_PingPong_PingPongGameModeBase_h_16_INCLASS \
-	PingPong_Source_PingPong_PingPongGameModeBase_h_16_STANDARD_CONSTRUCTORS \
+	PingPong_Source_PingPong_PingPongGameModeBase_h_17_PRIVATE_PROPERTY_OFFSET \
+	PingPong_Source_PingPong_PingPongGameModeBase_h_17_SPARSE_DATA \
+	PingPong_Source_PingPong_PingPongGameModeBase_h_17_RPC_WRAPPERS \
+	PingPong_Source_PingPong_PingPongGameModeBase_h_17_INCLASS \
+	PingPong_Source_PingPong_PingPongGameModeBase_h_17_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define PingPong_Source_PingPong_PingPongGameModeBase_h_16_GENERATED_BODY \
+#define PingPong_Source_PingPong_PingPongGameModeBase_h_17_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	PingPong_Source_PingPong_PingPongGameModeBase_h_16_PRIVATE_PROPERTY_OFFSET \
-	PingPong_Source_PingPong_PingPongGameModeBase_h_16_SPARSE_DATA \
-	PingPong_Source_PingPong_PingPongGameModeBase_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
-	PingPong_Source_PingPong_PingPongGameModeBase_h_16_INCLASS_NO_PURE_DECLS \
-	PingPong_Source_PingPong_PingPongGameModeBase_h_16_ENHANCED_CONSTRUCTORS \
+	PingPong_Source_PingPong_PingPongGameModeBase_h_17_PRIVATE_PROPERTY_OFFSET \
+	PingPong_Source_PingPong_PingPongGameModeBase_h_17_SPARSE_DATA \
+	PingPong_Source_PingPong_PingPongGameModeBase_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+	PingPong_Source_PingPong_PingPongGameModeBase_h_17_INCLASS_NO_PURE_DECLS \
+	PingPong_Source_PingPong_PingPongGameModeBase_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

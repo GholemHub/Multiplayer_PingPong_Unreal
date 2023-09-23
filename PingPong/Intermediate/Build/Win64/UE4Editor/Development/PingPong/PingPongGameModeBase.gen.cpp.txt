@@ -8,4 +8,6 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\In
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
 C:\Unreal\Multiplayer_PingPong_Unreal\PingPong\Source\PingPong\BasePawn.h
 C:\Unreal\Multiplayer_PingPong_Unreal\PingPong\Intermediate\Build\Win64\UE4Editor\Inc\PingPong\BasePawn.generated.h
+C:\Unreal\Multiplayer_PingPong_Unreal\PingPong\Source\PingPong\SecondPlayerController.h
+C:\Unreal\Multiplayer_PingPong_Unreal\PingPong\Intermediate\Build\Win64\UE4Editor\Inc\PingPong\SecondPlayerController.generated.h
 C:\Unreal\Multiplayer_PingPong_Unreal\PingPong\Intermediate\Build\Win64\UE4Editor\Inc\PingPong\PingPongGameModeBase.generated.h
