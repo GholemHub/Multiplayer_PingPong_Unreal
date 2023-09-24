@@ -1,45 +1,58 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
-
 #include "Second_PlayerController.h"
 
 ASecond_PlayerController::ASecond_PlayerController()
 {
     PrimaryActorTick.bCanEverTick = true;
     SceneComponent = CreateDefaultSubobject<USceneComponent>("SceneComponent");
-
     SetRootComponent(SceneComponent);
 }
 
 void ASecond_PlayerController::Tick(float DeltaTime)
 {
     Super::Tick(DeltaTime);
-    UE_LOG(LogTemp, Error, TEXT("Tick()"));
 
-    if (!VelocityVector.IsZero())
+    if (HasAuthority())
     {
-        const FVector NewLocation = GetPawn()->GetActorLocation() + Velocity * DeltaTime * VelocityVector;
-        GetPawn()->SetActorLocation(NewLocation);
-        UE_LOG(LogTemp, Error, TEXT("Move"));
+        if (!VelocityVector.IsZero())
+        {
+            const FVector NewLocation = GetPawn()->GetActorLocation() + Velocity * DeltaTime * VelocityVector;
+            GetPawn()->SetActorLocation(NewLocation);
+        }
     }
+}
+
+void ASecond_PlayerController::BeginPlay()
+{
+    Super::BeginPlay();
+   
+        SetReplicates(true);
+        SetReplicateMovement(true);
+ 
 }
 
 void ASecond_PlayerController::SetupInputComponent()
 {
     Super::SetupInputComponent();
-    UE_LOG(LogTemp, Error, TEXT("SetupInputComponent()1"));
-    // Bind input axes for the second player
-    
+
     if (!InputComponent)
         return;
 
-        UE_LOG(LogTemp, Error, TEXT("SetupInputComponent()"));
-        InputComponent->BindAxis("MoveYaw", this, &ASecond_PlayerController::MoveYaw);
-    
+    InputComponent->BindAxis("MoveYaw", this, &ASecond_PlayerController::MoveYaw);
 }
 
 void ASecond_PlayerController::MoveYaw(float Amount)
 {
-    UE_LOG(LogTemp, Error, TEXT("MoveYaw(float Amount) %f"), Amount);
-    VelocityVector.X = Amount;
+    
+        VelocityVector.X = Amount;
+      //ServerMoveYaw(Amount);
 }
+
+//void ASecond_PlayerController::ServerMoveYaw_Implementation(float Amount)
+//{
+//        MoveYaw(Amount);
+//}
+//
+//bool ASecond_PlayerController::ServerMoveYaw_Validate(float Amount)
+//{
+//    return true;
+//}

@@ -1,12 +1,20 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build (C:\Unreal\Multiplayer_PingPong_Unreal).
+  Parsing headers for PingPongEditor
+    Running UnrealHeaderTool "C:\Unreal\Multiplayer_PingPong_Unreal\PingPong\PingPong.uproject" "C:\Unreal\Multiplayer_PingPong_Unreal\PingPong\Intermediate\Build\Win64\PingPongEditor\Development\PingPongEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\Golem\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+  LogInit: Display: Loading text-based GConfig....
+  Reflection code generated for PingPongEditor in 8.9703624 seconds
   Building PingPongEditor...
   Using Visual Studio 2022 14.36.32535 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Building 4 actions with 8 processes...
-    [1/4] Second_PlayerController.cpp
-    [2/4] UE4Editor-PingPong.lib
+  Building 7 actions with 8 processes...
+    [1/7] PingPong.init.gen.cpp
+    [2/7] Second_PlayerController.gen.cpp
+    [3/7] Second_PlayerController.cpp
+    [4/7] PingPongGameModeBase.cpp
+C:\Unreal\Multiplayer_PingPong_Unreal\PingPong\Source\PingPong\PingPongGameModeBase.cpp(22): warning C4996: 'APlayerState::PlayerId': This member will be made private. Use GetPlayerId or SetPlayerId instead. Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile.
+    [5/7] UE4Editor-PingPong.lib
        Creating library C:\Unreal\Multiplayer_PingPong_Unreal\PingPong\Intermediate\Build\Win64\UE4Editor\Development\PingPong\UE4Editor-PingPong.lib and object C:\Unreal\Multiplayer_PingPong_Unreal\PingPong\Intermediate\Build\Win64\UE4Editor\Development\PingPong\UE4Editor-PingPong.exp
-    [3/4] UE4Editor-PingPong.dll
+    [6/7] UE4Editor-PingPong.dll
        Creating library C:\Unreal\Multiplayer_PingPong_Unreal\PingPong\Intermediate\Build\Win64\UE4Editor\Development\PingPong\UE4Editor-PingPong.suppressed.lib and object C:\Unreal\Multiplayer_PingPong_Unreal\PingPong\Intermediate\Build\Win64\UE4Editor\Development\PingPong\UE4Editor-PingPong.suppressed.exp
-    [4/4] PingPongEditor.target
-  Total time in Parallel executor: 2.12 seconds
-  Total execution time: 3.11 seconds
+    [7/7] PingPongEditor.target
+  Total time in Parallel executor: 6.20 seconds
+  Total execution time: 16.78 seconds

@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\PingPong.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{FD56DEAB-319E-49EF-A7C4-607444A58871}</UniqueIdentifier>
+      <UniqueIdentifier>{4AC2ECBE-1ACA-41D1-B88E-7E943FE26B88}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\PingPong.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{C2749E45-0F01-401E-9176-4B07E46739B3}</UniqueIdentifier>
+      <UniqueIdentifier>{0586465E-0875-44B3-BAA3-B79E6E338C16}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -27,7 +27,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\PingPong">
-      <UniqueIdentifier>{6A6A434C-B895-4CEA-8009-49B52D787358}</UniqueIdentifier>
+      <UniqueIdentifier>{EDD22B12-B274-4354-832D-92A81846260C}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\PingPong\BaseCharacter.cpp">
       <Filter>Source\PingPong</Filter>
@@ -62,10 +62,10 @@
     <ClInclude Include="..\..\Source\PingPong\PingPongGameModeBase.h">
       <Filter>Source\PingPong</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\PingPong\SecondPlayerController.cpp">
+    <ClCompile Include="..\..\Source\PingPong\SecondPlayerPawn.cpp">
       <Filter>Source\PingPong</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\PingPong\SecondPlayerController.h">
+    <ClInclude Include="..\..\Source\PingPong\SecondPlayerPawn.h">
       <Filter>Source\PingPong</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\PingPong\Second_PlayerController.cpp">

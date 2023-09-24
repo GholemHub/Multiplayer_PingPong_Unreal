@@ -4,7 +4,7 @@
 #include "PingPongGameModeBase.h"
 
 #include "Second_PlayerController.h"
-#include "SecondPlayerController.h"
+#include "SecondPlayerPawn.h"
 #include "GameFramework/PlayerState.h"
 
 
@@ -53,7 +53,7 @@ void APingPongGameModeBase::SpawnSecondPlayer()
     if (SecondPlayerCharacterClass)
     {
         // Spawn the second player character
-        FVector SpawnLocation = FVector(0.0f, 0.0f, 0.0f); // Set the spawn location as needed
+        FVector SpawnLocation = FVector(0.0f, 0.0f, 30.f); // Set the spawn location as needed
         FRotator SpawnRotation = FRotator(0.0f, 0.0f, 0.0f); // Set the spawn rotation as needed
         ASecondPlayerController* SecondPlayerCharacter = GetWorld()->SpawnActor<ASecondPlayerController>(SecondPlayerCharacterClass, SpawnLocation, SpawnRotation);
 

@@ -45,7 +45,9 @@ void ABasePawn::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 
 void ABasePawn::MoveYaw(float Amount)
 {
-	UE_LOG(LogTemp, Warning, TEXT("Begin2 %f"), Amount);
-	VelocityVector.X = Amount;
+	
+		UE_LOG(LogTemp, Warning, TEXT("Begin2 %f"), Amount);
+		VelocityVector.X = Amount;
+	
 }
 

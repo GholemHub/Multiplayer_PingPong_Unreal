@@ -50,7 +50,7 @@ void EmptyLinkFunctionForGeneratedCodeSecond_PlayerController() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ASecond_PlayerController_Statics::Class_MetaDataParams[] = {
-		{ "Comment", "/**\n * \n */" },
+		{ "Comment", "/**\n *\n */" },
 		{ "HideCategories", "Collision Rendering Utilities|Transformation" },
 		{ "IncludePath", "Second_PlayerController.h" },
 		{ "ModuleRelativePath", "Second_PlayerController.h" },
@@ -102,7 +102,7 @@ void EmptyLinkFunctionForGeneratedCodeSecond_PlayerController() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ASecond_PlayerController, 3889862697);
+	IMPLEMENT_CLASS(ASecond_PlayerController, 2539542334);
 	template<> PINGPONG_API UClass* StaticClass<ASecond_PlayerController>()
 	{
 		return ASecond_PlayerController::StaticClass();

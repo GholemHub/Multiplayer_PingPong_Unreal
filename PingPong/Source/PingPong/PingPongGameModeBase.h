@@ -5,7 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/GameModeBase.h"
 #include "BasePawn.h"
-#include "SecondPlayerController.h"
+#include "SecondPlayerPawn.h"
 #include "PingPongGameModeBase.generated.h"
 
 /**

@@ -1,5 +1,3 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 #pragma once
 
 #include "CoreMinimal.h"
@@ -7,27 +5,35 @@
 #include "Second_PlayerController.generated.h"
 
 /**
- * 
+ *
  */
 UCLASS()
 class PINGPONG_API ASecond_PlayerController : public APlayerController
 {
-	GENERATED_BODY()
+    GENERATED_BODY()
 
-		ASecond_PlayerController();
+public:
+    ASecond_PlayerController();
+
 protected:
-	virtual void Tick(float DeltaTime) override;
+    virtual void Tick(float DeltaTime) override;
+    virtual void BeginPlay() override;
 
-	UPROPERTY(VisibleAnywhere)
-		USceneComponent* SceneComponent;
+    UPROPERTY(VisibleAnywhere)
+        USceneComponent* SceneComponent;
 
-	UPROPERTY(EditAnywhere)
-		float Velocity = 300.f;
+    UPROPERTY(EditAnywhere)
+        float Velocity = 300.f;
 
-	virtual void SetupInputComponent() override;
-	//virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-private:
-	FVector VelocityVector = FVector::ZeroVector;
-	void MoveYaw(float Amount);
+    virtual void SetupInputComponent() override;
 
+    /*UFUNCTION(Server, Reliable, WithValidation)
+        void ServerMoveYaw(float Amount);
+
+    bool ServerMoveYaw_Validate(float Amount);*/
+
+    FVector VelocityVector = FVector::ZeroVector;
+
+public:
+    void MoveYaw(float Amount);
 };
