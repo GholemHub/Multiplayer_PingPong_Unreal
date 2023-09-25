@@ -4,6 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Pawn.h"
+#include "GameFramework/SpringArmComponent.h"
+#include "Camera/CameraComponent.h"
 #include "BasePawn.generated.h"
 
 UCLASS()
@@ -24,15 +26,27 @@ public:
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+	virtual void GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const override;
 
+	void MoveYaw(float Amount);
+
+	UFUNCTION(Server, Reliable, WithValidation)
+		void Server_MoveYaw(float Amount);
+
+	bool Server_MoveYaw_Validate(float Amount);
+	void Server_MoveYaw_Implementation(float Amount);
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+	
+
 private:
+	UPROPERTY(Replicated)
 	FVector VelocityVector = FVector::ZeroVector;
 
-	void MoveYaw(float Amount);
+	
 };

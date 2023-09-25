@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\PingPong.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{4AC2ECBE-1ACA-41D1-B88E-7E943FE26B88}</UniqueIdentifier>
+      <UniqueIdentifier>{BF466D2C-08CB-419D-BC21-4346382B4213}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\PingPong.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{0586465E-0875-44B3-BAA3-B79E6E338C16}</UniqueIdentifier>
+      <UniqueIdentifier>{E4C9113F-307A-4B17-B3E8-888C17A3F6E5}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -27,7 +27,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\PingPong">
-      <UniqueIdentifier>{EDD22B12-B274-4354-832D-92A81846260C}</UniqueIdentifier>
+      <UniqueIdentifier>{63224584-1C2B-48D0-B90B-5B2D7EFE9355}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\PingPong\BaseCharacter.cpp">
       <Filter>Source\PingPong</Filter>

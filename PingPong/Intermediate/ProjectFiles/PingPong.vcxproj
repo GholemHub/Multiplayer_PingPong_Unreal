@@ -51,7 +51,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{2490FCB5-ED03-4E4B-849F-C8C8A72CA18F}</ProjectGuid>
+    <ProjectGuid>{2C1CF457-E025-4EE5-A4D6-E567503E3CDD}</ProjectGuid>
     <Keyword>MakeFileProj</Keyword>
     <RootNamespace>PingPong</RootNamespace>
     <PlatformToolset>v143</PlatformToolset>

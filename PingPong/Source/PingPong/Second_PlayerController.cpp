@@ -43,7 +43,7 @@ void ASecond_PlayerController::SetupInputComponent()
 void ASecond_PlayerController::MoveYaw(float Amount)
 {
     
-        VelocityVector.X = Amount;
+        //VelocityVector.X = Amount;
       //ServerMoveYaw(Amount);
 }
 

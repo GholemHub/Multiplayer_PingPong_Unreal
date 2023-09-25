@@ -46,5 +46,5 @@ void ASecondPlayerController::BeginPlay()
 void ASecondPlayerController::MoveYaw(float Amount)
 {
     UE_LOG(LogTemp, Warning, TEXT("Begin2 %f"), Amount);
-    VelocityVector.X = Amount;
+    //VelocityVector.X = Amount;
 }
