@@ -10,6 +10,8 @@ ABasePawn::ABasePawn()
 	PrimaryActorTick.bCanEverTick = true;
 	SceneComponent = CreateDefaultSubobject<USceneComponent>("SceneComponent");
 
+	SetRootComponent(BoxCollisionComponent);
+
 	SetRootComponent(SceneComponent);
 }
 
@@ -28,9 +30,19 @@ void ABasePawn::BeginPlay()
 void ABasePawn::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const
 {
 	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
-
-	// Add your custom replicated properties here
 	DOREPLIFETIME(ABasePawn, VelocityVector);
+}
+
+void ABasePawn::NotifyHit(UPrimitiveComponent* MyComp, AActor* Other, UPrimitiveComponent* OtherComp, bool bSelfMoved, FVector HitLocation, FVector HitNormal, FVector NormalImpulse, const FHitResult& Hit)
+{
+	Super::NotifyHit(MyComp, Other, OtherComp, bSelfMoved, HitLocation, HitNormal, NormalImpulse, Hit);
+
+	// Check if the Other actor or component is something you want to interact with
+	if (Other && Other != this)
+	{
+		// Stop the Pawn's movement when it collides
+		VelocityVector = FVector::ZeroVector;
+	}
 }
 
 
@@ -42,7 +54,10 @@ void ABasePawn::Tick(float DeltaTime)
 	if (!VelocityVector.IsZero()) 
 	{
 		const FVector NewLocation = GetActorLocation() + Velocity * DeltaTime * VelocityVector;
-		SetActorLocation(NewLocation);
+		if (NewLocation.Y < 550 && NewLocation.Y > -300) {
+			SetActorLocation(NewLocation);
+		}
+		
 	}
 
 }

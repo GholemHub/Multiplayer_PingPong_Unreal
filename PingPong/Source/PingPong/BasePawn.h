@@ -6,7 +6,10 @@
 #include "GameFramework/Pawn.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "Camera/CameraComponent.h"
+#include "Components/BoxComponent.h"
 #include "BasePawn.generated.h"
+
+class UBoxComponent;
 
 UCLASS()
 class PINGPONG_API ABasePawn : public APawn
@@ -23,10 +26,16 @@ public:
 	UPROPERTY(EditAnywhere)
 		float Velocity = 300.f;
 
+	UPROPERTY(EditAnywhere)
+		UBoxComponent* BoxCollisionComponent;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 	virtual void GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const override;
+	
+	virtual void NotifyHit(UPrimitiveComponent* MyComp, AActor* Other, UPrimitiveComponent* OtherComp, bool bSelfMoved, FVector HitLocation, FVector HitNormal, FVector NormalImpulse, const FHitResult& Hit) override;
+
 
 	void MoveYaw(float Amount);
 
@@ -41,8 +50,6 @@ public:
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-
-	
 
 private:
 	UPROPERTY(Replicated)

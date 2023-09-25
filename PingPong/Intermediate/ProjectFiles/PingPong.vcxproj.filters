@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\PingPong.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{BF466D2C-08CB-419D-BC21-4346382B4213}</UniqueIdentifier>
+      <UniqueIdentifier>{F5D27A07-30C9-4EA6-89D7-21AF588FFA93}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\PingPong.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{E4C9113F-307A-4B17-B3E8-888C17A3F6E5}</UniqueIdentifier>
+      <UniqueIdentifier>{10B1A053-8CA2-4688-B7C1-7CF5E5560429}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -27,7 +27,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\PingPong">
-      <UniqueIdentifier>{63224584-1C2B-48D0-B90B-5B2D7EFE9355}</UniqueIdentifier>
+      <UniqueIdentifier>{376E07D0-FED2-48FE-971F-F0362CA6B66A}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\PingPong\BaseCharacter.cpp">
       <Filter>Source\PingPong</Filter>
@@ -45,6 +45,12 @@
       <Filter>Source\PingPong</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\PingPong\BasePlayerController.h">
+      <Filter>Source\PingPong</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PingPong\BasePlayerState.cpp">
+      <Filter>Source\PingPong</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PingPong\BasePlayerState.h">
       <Filter>Source\PingPong</Filter>
     </ClInclude>
     <None Include="..\..\Source\PingPong\PingPong.Build.cs">
@@ -73,6 +79,21 @@
     </ClCompile>
     <ClInclude Include="..\..\Source\PingPong\Second_PlayerController.h">
       <Filter>Source\PingPong</Filter>
+    </ClInclude>
+    <Filter Include="Source\PingPong\UI">
+      <UniqueIdentifier>{2E8B54D1-3C3D-475E-9531-2C958CB37AE6}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\PingPong\UI\BaseHUD.cpp">
+      <Filter>Source\PingPong\UI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PingPong\UI\BaseHUD.h">
+      <Filter>Source\PingPong\UI</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PingPong\UI\ScoreUserWidget.cpp">
+      <Filter>Source\PingPong\UI</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PingPong\UI\ScoreUserWidget.h">
+      <Filter>Source\PingPong\UI</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
