@@ -1,4 +1,4 @@
 # Multiplayer_PingPong_Unreal
 
 
-![Image Title](Screensot.png)
+![Image Title](Screenshot.png)
