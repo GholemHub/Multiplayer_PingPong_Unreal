@@ -13,28 +13,28 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define PINGPONG_BasePawn_generated_h
 
-#define PingPong_Source_PingPong_BasePawn_h_17_SPARSE_DATA
-#define PingPong_Source_PingPong_BasePawn_h_17_RPC_WRAPPERS \
+#define PingPong_Source_PingPong_BasePawn_h_15_SPARSE_DATA
+#define PingPong_Source_PingPong_BasePawn_h_15_RPC_WRAPPERS \
 	virtual bool Server_MoveYaw_Validate(float ); \
 	virtual void Server_MoveYaw_Implementation(float Amount); \
  \
 	DECLARE_FUNCTION(execServer_MoveYaw);
 
 
-#define PingPong_Source_PingPong_BasePawn_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+#define PingPong_Source_PingPong_BasePawn_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execServer_MoveYaw);
 
 
-#define PingPong_Source_PingPong_BasePawn_h_17_EVENT_PARMS \
+#define PingPong_Source_PingPong_BasePawn_h_15_EVENT_PARMS \
 	struct BasePawn_eventServer_MoveYaw_Parms \
 	{ \
 		float Amount; \
 	};
 
 
-#define PingPong_Source_PingPong_BasePawn_h_17_CALLBACK_WRAPPERS
-#define PingPong_Source_PingPong_BasePawn_h_17_INCLASS_NO_PURE_DECLS \
+#define PingPong_Source_PingPong_BasePawn_h_15_CALLBACK_WRAPPERS
+#define PingPong_Source_PingPong_BasePawn_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesABasePawn(); \
 	friend struct Z_Construct_UClass_ABasePawn_Statics; \
@@ -49,7 +49,7 @@ public: \
 	NO_API virtual void ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const override;
 
 
-#define PingPong_Source_PingPong_BasePawn_h_17_INCLASS \
+#define PingPong_Source_PingPong_BasePawn_h_15_INCLASS \
 private: \
 	static void StaticRegisterNativesABasePawn(); \
 	friend struct Z_Construct_UClass_ABasePawn_Statics; \
@@ -64,7 +64,7 @@ public: \
 	NO_API virtual void ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const override;
 
 
-#define PingPong_Source_PingPong_BasePawn_h_17_STANDARD_CONSTRUCTORS \
+#define PingPong_Source_PingPong_BasePawn_h_15_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ABasePawn(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ABasePawn) \
@@ -77,7 +77,7 @@ private: \
 public:
 
 
-#define PingPong_Source_PingPong_BasePawn_h_17_ENHANCED_CONSTRUCTORS \
+#define PingPong_Source_PingPong_BasePawn_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ABasePawn(ABasePawn&&); \
@@ -88,36 +88,36 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ABasePawn)
 
 
-#define PingPong_Source_PingPong_BasePawn_h_17_PRIVATE_PROPERTY_OFFSET \
+#define PingPong_Source_PingPong_BasePawn_h_15_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__VelocityVector() { return STRUCT_OFFSET(ABasePawn, VelocityVector); }
 
 
-#define PingPong_Source_PingPong_BasePawn_h_14_PROLOG \
-	PingPong_Source_PingPong_BasePawn_h_17_EVENT_PARMS
+#define PingPong_Source_PingPong_BasePawn_h_12_PROLOG \
+	PingPong_Source_PingPong_BasePawn_h_15_EVENT_PARMS
 
 
-#define PingPong_Source_PingPong_BasePawn_h_17_GENERATED_BODY_LEGACY \
+#define PingPong_Source_PingPong_BasePawn_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	PingPong_Source_PingPong_BasePawn_h_17_PRIVATE_PROPERTY_OFFSET \
-	PingPong_Source_PingPong_BasePawn_h_17_SPARSE_DATA \
-	PingPong_Source_PingPong_BasePawn_h_17_RPC_WRAPPERS \
-	PingPong_Source_PingPong_BasePawn_h_17_CALLBACK_WRAPPERS \
-	PingPong_Source_PingPong_BasePawn_h_17_INCLASS \
-	PingPong_Source_PingPong_BasePawn_h_17_STANDARD_CONSTRUCTORS \
+	PingPong_Source_PingPong_BasePawn_h_15_PRIVATE_PROPERTY_OFFSET \
+	PingPong_Source_PingPong_BasePawn_h_15_SPARSE_DATA \
+	PingPong_Source_PingPong_BasePawn_h_15_RPC_WRAPPERS \
+	PingPong_Source_PingPong_BasePawn_h_15_CALLBACK_WRAPPERS \
+	PingPong_Source_PingPong_BasePawn_h_15_INCLASS \
+	PingPong_Source_PingPong_BasePawn_h_15_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define PingPong_Source_PingPong_BasePawn_h_17_GENERATED_BODY \
+#define PingPong_Source_PingPong_BasePawn_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	PingPong_Source_PingPong_BasePawn_h_17_PRIVATE_PROPERTY_OFFSET \
-	PingPong_Source_PingPong_BasePawn_h_17_SPARSE_DATA \
-	PingPong_Source_PingPong_BasePawn_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
-	PingPong_Source_PingPong_BasePawn_h_17_CALLBACK_WRAPPERS \
-	PingPong_Source_PingPong_BasePawn_h_17_INCLASS_NO_PURE_DECLS \
-	PingPong_Source_PingPong_BasePawn_h_17_ENHANCED_CONSTRUCTORS \
+	PingPong_Source_PingPong_BasePawn_h_15_PRIVATE_PROPERTY_OFFSET \
+	PingPong_Source_PingPong_BasePawn_h_15_SPARSE_DATA \
+	PingPong_Source_PingPong_BasePawn_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	PingPong_Source_PingPong_BasePawn_h_15_CALLBACK_WRAPPERS \
+	PingPong_Source_PingPong_BasePawn_h_15_INCLASS_NO_PURE_DECLS \
+	PingPong_Source_PingPong_BasePawn_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
